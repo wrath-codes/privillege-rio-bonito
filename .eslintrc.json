@@ -72,7 +72,12 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*.test.js", "**/*.spec.js"]
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.spec.js",
+          "**/*.stories.js",
+          "**/*.config.js"
+        ]
       }
     ],
     "prettier/prettier": ["error"],
@@ -96,6 +101,7 @@
       "rootDir": "src"
     },
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "prettier-config": ".prettier.config.js"
   }
 }
