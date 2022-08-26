@@ -11,6 +11,7 @@ const Contact: NextPage = () => {
     message: "",
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

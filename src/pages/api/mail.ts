@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import sgMail from "@sendgrid/mail";
 import type { NextApiRequest, NextApiResponse } from "next";
 
@@ -15,20 +14,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const { from_name, from_email, from_phone, message } = mailInfo;
 
-  const email = {
+  sgMail.send({
     to: process.env.SENDGRID_TO_EMAIL,
-    from: process.env.SENDGRID_TO_EMAIL,
-    subject: "Contato - Rio Bonito Privillège - Interesse",
-    templateId: process.env.SENDGRID_TEMPLATE_ID,
-    dynamic_template_data: {
+    from: String(process.env.SENDGRID_TO_EMAIL),
+    subject: String("Contato - Rio Bonito Privillège - Interesse"),
+    templateId: String(process.env.SENDGRID_TEMPLATE_ID),
+    dynamicTemplateData: {
       from_name,
       from_email,
       from_phone,
       message,
     },
-  };
-
-  sgMail.send(email);
+  });
 
   res.status(200).json({ message: "Email enviado com sucesso!" });
 }
