@@ -28,6 +28,13 @@ const Contact: NextPage = () => {
       },
       body: JSON.stringify(formData),
     });
+
+    setFormData({
+      from_name: "",
+      from_email: "",
+      from_phone: "",
+      message: "",
+    });
   };
   return (
     <>
