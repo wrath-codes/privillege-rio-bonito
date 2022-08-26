@@ -3,10 +3,10 @@ import Link from "next/link";
 export function Logo() {
   return (
     <Link href="/">
-      <div className="text-4xl font-bold tracking-tight w-64 flex cursor-pointer mb-3 text-gray-200 items-center">
-        <div className="text-teal-700 font-bold mr-1">.</div>
+      <div className="mb-3 flex w-64 cursor-pointer items-center text-4xl font-bold tracking-tight text-gray-200">
+        <div className="mr-1 font-bold text-teal-700">.</div>
         privillège
-        <div className="text-xl pt-9 ml-8 mt-2 absolute">rio bonito</div>
+        <div className="absolute ml-8 mt-2 pt-9 text-xl">rio bonito</div>
       </div>
     </Link>
   );
