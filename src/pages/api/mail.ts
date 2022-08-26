@@ -14,7 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const { from_name, from_email, from_phone, message } = mailInfo;
 
-  sgMail.send({
+  const msg = {
     to: process.env.SENDGRID_TO_EMAIL,
     from: String(process.env.SENDGRID_TO_EMAIL),
     subject: String("Contato - Rio Bonito Privillège - Interesse"),
@@ -25,7 +25,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       from_phone,
       message,
     },
-  });
+  };
+
+  sgMail.send(msg);
 
   res.status(200).json({ message: "Email enviado com sucesso!" });
 }
