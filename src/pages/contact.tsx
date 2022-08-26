@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Contact: NextPage = () => {
@@ -117,6 +118,7 @@ const Contact: NextPage = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import plantaCobertura from "../../public/img/planta-cobertura.jpeg";
 import plantaPadrao from "../../public/img/planta-padrao.jpeg";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Plants: NextPage = () => {
@@ -51,6 +52,7 @@ const Plants: NextPage = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

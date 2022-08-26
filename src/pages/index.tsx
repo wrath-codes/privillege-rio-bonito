@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import faixada from "../../public/img/faixada-3d.jpeg";
 import recepcao from "../../public/img/foto-recepcao.jpeg";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Home: NextPage = () => {
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
           alt="recepcao"
         />
       </div>
+      <Footer />
     </>
   );
 };
