@@ -96,18 +96,6 @@
       "rootDir": "src"
     },
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off",
-    "prettier/prettier": {
-      "singleQuote": true,
-      "trailingComma": "es5",
-      "printWidth": 120,
-      "tabWidth": 2,
-      "semi": false,
-      "jsxSingleQuote": true,
-      "bracketSpacing": true,
-      "jsxBracketSameLine": false,
-      "arrowParens": "avoid",
-      "parser": "typescript"
-    }
+    "@next/next/no-page-custom-font": "off"
   }
 }
