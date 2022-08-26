@@ -49,7 +49,7 @@ const Header = () => {
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {navigation.map(item => (
                       <Link key={item.name} href={item.href} passHref>
                         <a
                           className={classNames(
@@ -71,7 +71,7 @@ const Header = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {navigation.map(item => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
