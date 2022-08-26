@@ -9,21 +9,21 @@ const Plants: NextPage = () => {
   return (
     <>
       <Header />
-      <div className="container relative mx-auto px-3 py-5 flex-1  p-5 text-center mt-10 h-auto">
-        <div className="squarepeg font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+      <div className="container relative mx-auto mt-10 h-auto flex-1  p-5 px-3 py-5 text-center">
+        <div className="squarepeg text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">
           Plantas
         </div>
-        <section className="flex mt-10">
-          <div className="py-5 mt-2 md:py-0 container mx-auto max-w-4xl px-6 flex flex-col items-center justify-between">
-            <div className="text-4xl squarepeg font-semibold">
+        <section className="mt-10 flex">
+          <div className="container mx-auto mt-2 flex max-w-4xl flex-col items-center justify-between py-5 px-6 md:py-0">
+            <div className="squarepeg text-4xl font-semibold">
               Planta Padrão
             </div>
             <Image
-              className="rounded-lg mx-auto flex container max-w-2xl shadow-lg shadow-gray-900 mt-5"
+              className="container mx-auto mt-5 flex max-w-2xl rounded-lg shadow-lg shadow-gray-900"
               src={plantaPadrao}
               alt="plantaPadrao"
             />
-            <div className="flex row justify-between mt-5 text-left text-md">
+            <div className="row text-md mt-5 flex justify-between text-left">
               20 Unidades de 98m² <br />
               2 Suítes <br />
               Dependências completas <br />
@@ -32,17 +32,17 @@ const Plants: NextPage = () => {
             </div>
           </div>
         </section>
-        <section className="flex mt-15">
-          <div className="py-5 mt-2 md:py-0 container mx-auto max-w-4xl px-6 flex flex-col items-center justify-between">
-            <div className="text-4xl squarepeg font-semibold">
+        <section className="mt-15 flex">
+          <div className="container mx-auto mt-2 flex max-w-4xl flex-col items-center justify-between py-5 px-6 md:py-0">
+            <div className="squarepeg text-4xl font-semibold">
               Planta Duplex
             </div>
             <Image
-              className="rounded-lg mx-auto flex container max-w-2xl shadow-lg shadow-gray-900 mt-5"
+              className="container mx-auto mt-5 flex max-w-2xl rounded-lg shadow-lg shadow-gray-900"
               src={plantaCobertura}
               alt="plantaCobertura"
             />
-            <div className="flex row justify-between mt-5 text-left text-md">
+            <div className="row text-md mt-5 flex justify-between text-left">
               4 Unidades Duplex de 220m² <br />
               3 suítes <br />
               Terraço com espaço para piscina e cozinha gourmet <br />

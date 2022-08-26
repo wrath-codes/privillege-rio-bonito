@@ -39,19 +39,19 @@ const Contact: NextPage = () => {
   return (
     <>
       <Header />
-      <div className="container relative mx-auto px-3 py-5 flex-1  p-5 text-center mt-10 h-auto">
-        <div className="py-5 mt-2 md:py-0 container mx-auto max-w-4xl px-6 flex flex-col items-center justify-between">
+      <div className="container relative mx-auto mt-10 h-auto flex-1  p-5 px-3 py-5 text-center">
+        <div className="container mx-auto mt-2 flex max-w-4xl flex-col items-center justify-between py-5 px-6 md:py-0">
           <form
-            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            className="mb-4 rounded bg-white px-8 pt-6 pb-8 shadow-md"
             onSubmit={onComeplete}
           >
-            <div className="text-4xl text-gray-700 mb-5 squarepeg font-bold">
+            <div className="squarepeg mb-5 text-4xl font-bold text-gray-700">
               Agende sua visita
             </div>
             <div className="mb-4">
               <label
                 htmlFor="from_name"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="mb-2 block text-sm font-bold text-gray-700"
               >
                 Nome
               </label>
@@ -59,7 +59,7 @@ const Contact: NextPage = () => {
                 type="text"
                 name="from_name"
                 id="from_name"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-teal-600 focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-teal-600"
                 onChange={handleChange}
                 required
               />
@@ -67,7 +67,7 @@ const Contact: NextPage = () => {
             <div className="mb-4">
               <label
                 htmlFor="from_email"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="mb-2 block text-sm font-bold text-gray-700"
               >
                 Email
               </label>
@@ -75,7 +75,7 @@ const Contact: NextPage = () => {
                 type="email"
                 name="from_email"
                 id="from_email"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-teal-600 focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-teal-600"
                 onChange={handleChange}
                 required
               />
@@ -83,7 +83,7 @@ const Contact: NextPage = () => {
             <div className="mb-4">
               <label
                 htmlFor="from_phone"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="mb-2 block text-sm font-bold text-gray-700"
               >
                 Celular
               </label>
@@ -91,13 +91,13 @@ const Contact: NextPage = () => {
                 type="text"
                 name="from_phone"
                 id="from_phone"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-teal-600 focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-teal-600"
                 onChange={handleChange}
                 required
               />
             </div>
             <textarea
-              className="items-center flex mx-auto p-2 justify-between focus:outline-teal-600"
+              className="mx-auto flex items-center justify-between p-2 focus:outline-teal-600"
               name="message"
               id="message"
               cols={30}
@@ -106,9 +106,9 @@ const Contact: NextPage = () => {
               onChange={handleChange}
               required
             />
-            <div className="flex items-center justify-around mt-4">
+            <div className="mt-4 flex items-center justify-around">
               <button
-                className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="focus:shadow-outline rounded bg-teal-500 py-2 px-4 font-bold text-white hover:bg-teal-700 focus:outline-none"
                 type="submit"
               >
                 Enviar

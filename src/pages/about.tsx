@@ -8,12 +8,12 @@ const About: NextPage = () => {
   return (
     <>
       <Header />
-      <div className="container relative mx-auto px-3 py-5 flex-1  p-5 text-center mt-10 h-auto">
+      <div className="container relative mx-auto mt-10 h-auto flex-1  p-5 px-3 py-5 text-center">
         <section>
-          <div className="squarepeg font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          <div className="squarepeg text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">
             Um pouco mais sobre o empreendimento
           </div>
-          <div className="py-5 mt-10 md:py-0 container mx-auto max-w-4xl px-6 flex flex-col items-center justify-between">
+          <div className="container mx-auto mt-10 flex max-w-4xl flex-col items-center justify-between py-5 px-6 md:py-0">
             <span className="font-bold">Nosso empreedimento conta com:</span>
             <ul className="">
               <li>
@@ -26,14 +26,14 @@ const About: NextPage = () => {
             </ul>
           </div>
         </section>
-        <div className="squarepeg font-bold text-5xl mt-5 sm:text-6xl md:text-7xl lg:text-8xl">
+        <div className="squarepeg mt-5 text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">
           Serviços
         </div>
         <section id="piscina" className="flex">
-          <div className="py-5 mt-2 md:py-0 container mx-auto max-w-4xl px-6 flex flex-col items-center justify-between">
-            <div className="text-4xl squarepeg font-semibold">Piscina</div>
+          <div className="container mx-auto mt-2 flex max-w-4xl flex-col items-center justify-between py-5 px-6 md:py-0">
+            <div className="squarepeg text-4xl font-semibold">Piscina</div>
             <Image
-              className="rounded-lg mx-auto flex container max-w-2xl shadow-2xl shadow-gray-900 mt-5"
+              className="container mx-auto mt-5 flex max-w-2xl rounded-lg shadow-2xl shadow-gray-900"
               src={piscina}
               alt="piscina"
             />
